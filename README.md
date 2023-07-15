@@ -12,8 +12,11 @@ Feel free to explore and copy everything you want. Enjoy!
 # build an image from local
 docker build -t nginx-distroless nginx-distroless/
 
-# build an image from remote
+# build an image from a remote branch
 export DOCKER_BUILDKIT=0
 export COMPOSE_DOCKER_CLI_BUILD=0
-docker build -t nginx-distroless https://github.com/mateusz-uminski/dockerfiles.git#nginx:nginx-distroless
+docker build -t nginx-distroless github.com/mateusz-uminski/dockerfiles#main:nginx-distroless
+
+# build an image from a specific version
+docker build -t nginx-distroless github.com/mateusz-uminski/dockerfiles#nginx-distroless/v0.1.0:nginx-distroless
 ```
