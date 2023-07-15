@@ -4,6 +4,7 @@
 # How to use?
 ```sh
 # build an image from local
+cd $(git rev-parse --show-toplevel)
 docker build -t nginx-distroless nginx-distroless/
 
 # build an image from a remote branch
