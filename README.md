@@ -1,6 +1,6 @@
 # dockerfiles
 
-This repository serves as a central location for storing custom Dockerfiles used for learning and exploring innovative ideas.
+This repository serves as a collection of Dockerfiles specifically designed to build base images that can be used in other projects. These Dockerfiles are used for learning and verifying unconventional ideas.
 
 Besides the README.md further documentation can be found in commits, code comments and nested README files.
 
