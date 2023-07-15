@@ -1,5 +1,4 @@
 FROM nginx:1.24.0-bullseye AS base
-
 RUN arch=$(arch) && \
     mkdir -p /opt/var/cache/nginx && \
     cp -aL --parents /var/run /opt && \
@@ -17,10 +16,8 @@ RUN arch=$(arch) && \
     cp -a --parents /lib/${arch}-linux-gnu/libz.* /opt && \
     cp /usr/share/zoneinfo/UTC /opt/etc/localtime
 
-
+# final
 FROM gcr.io/distroless/base-debian11:latest
-
 COPY --from=base /opt /
-
 ENTRYPOINT ["/usr/sbin/nginx"]
 CMD ["-g", "daemon off;"]
