@@ -1,0 +1,36 @@
+name: build
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        runner:
+          - name: ubuntu-22.04
+            arch: x86
+        path:
+          - nginx-distroless
+    name: "${{ matrix.path }}(${{ matrix.runner.arch }})"
+    uses: mateusz-uminski/github-actions/.github/workflows/build-docker-image.yaml@main
+    with:
+      runner: ${{ matrix.runner.name }}
+      path: ${{ matrix.path }}
+      tag: latest
+
+  results:
+    runs-on: ubuntu-20.04
+    if: ${{ always() && github.event.pull_request }}
+    needs: build
+    steps:
+      - run: exit 1
+        if: >-
+          ${{
+            contains(needs.*.result, 'failure')
+            || contains(needs.*.result, 'cancelled')
+          }}
