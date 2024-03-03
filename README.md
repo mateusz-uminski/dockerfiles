@@ -9,12 +9,15 @@ Besides the README.md further documentation can be found in commits, code commen
 Feel free to explore and copy everything you want. Enjoy!
 
 # Usage
+
+## Build an image from a local environment
 ```sh
-# build an image from a local environment
 cd $(git rev-parse --show-toplevel)
 docker build -t <image name>:<tag> <path to a dockerfile>/
+```
 
-# build an image from a remote
+## Build an image from a remote
+```sh
 export DOCKER_BUILDKIT=0
 export COMPOSE_DOCKER_CLI_BUILD=0
 docker build -t <image name>:<tag> github.com/mateusz-uminski/dockerfiles#main:<path to a dockerfile>
