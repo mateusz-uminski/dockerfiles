@@ -1,4 +1,4 @@
-# nginx-distroless
+# frr
 
 Frr container image used for creating network labs.
 
