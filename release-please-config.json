@@ -17,6 +17,10 @@
     "amazon2023-systemd": {
       "release-type": "simple",
       "component": "amazon2023-systemd"
+    },
+    "alma9-systemd": {
+      "release-type": "simple",
+      "component": "alma9-systemd"
     }
   }
 }

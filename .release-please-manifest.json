@@ -2,5 +2,6 @@
   "nginx-distroless": "0.1.0",
   "frr": "0.1.0",
   "debian12-systemd": "0.1.0",
-  "amazon2023-systemd": "0.1.0"
+  "amazon2023-systemd": "0.1.0",
+  "alma9-systemd": "0.0.1"
 }
