@@ -18,6 +18,7 @@ jobs:
           - nginx-distroless
           - frr
           - debian12-systemd
+          - amazon2023-systemd
     name: "${{ matrix.path }}(${{ matrix.runner.arch }})"
     uses: mateusz-uminski/github-actions/.github/workflows/build-docker-image.yaml@main
     with:
