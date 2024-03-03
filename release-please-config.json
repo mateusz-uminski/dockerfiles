@@ -13,6 +13,10 @@
     "debian12-systemd": {
       "release-type": "simple",
       "component": "debian12-systemd"
+    },
+    "amazon2023-systemd": {
+      "release-type": "simple",
+      "component": "amazon2023-systemd"
     }
   }
 }
