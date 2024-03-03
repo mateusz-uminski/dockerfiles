@@ -9,6 +9,10 @@
     "frr": {
       "release-type": "simple",
       "component": "frr"
+    },
+    "debian12-systemd": {
+      "release-type": "simple",
+      "component": "debian12-systemd"
     }
   }
 }

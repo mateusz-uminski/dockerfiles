@@ -1,4 +1,5 @@
 {
   "nginx-distroless": "0.1.0",
-  "frr": "0.1.0"
+  "frr": "0.1.0",
+  "debian12-systemd": "0.0.1"
 }
