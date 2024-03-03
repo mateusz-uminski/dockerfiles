@@ -5,6 +5,10 @@
     "nginx-distroless": {
       "release-type": "simple",
       "component": "nginx-distroless"
+    },
+    "frr": {
+      "release-type": "simple",
+      "component": "frr"
     }
   }
 }

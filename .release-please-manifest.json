@@ -1,3 +1,4 @@
 {
-  "nginx-distroless": "0.1.0"
+  "nginx-distroless": "0.1.0",
+  "frr": "0.0.1"
 }
