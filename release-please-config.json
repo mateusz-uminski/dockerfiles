@@ -1,0 +1,10 @@
+{
+  "separate-pull-requests": true,
+
+  "packages": {
+    "nginx-distroless": {
+      "release-type": "simple",
+      "component": "nginx-distroless"
+    }
+  }
+}
