@@ -21,6 +21,10 @@
     "alma9-systemd": {
       "release-type": "simple",
       "component": "alma9-systemd"
+    },
+    "jsonnet": {
+      "release-type": "simple",
+      "component": "jsonnet"
     }
   }
 }
